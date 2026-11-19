@@ -9,6 +9,14 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu'
 </script>
 
 
@@ -20,11 +28,30 @@ import {
             <RouterLink to="/Inicio">Inicio</RouterLink>
         </Button> 
 
-         <div class="flex w-[80%] ml-4 items-center gap-2 ">
+        <div class="flex w-[95%] ml-4 items-center gap-2 ">
             <Input type="busqueda" placeholder="Quiero a..." class="flex-1 bg-willow opacity-80"/>
             <Button type="submit" class="bg-cerulean hover:bg-aqua hover:text-black">
               <Search />
             </Button>
+        </div>
+
+          <div class="flex w-[80%] ml-4 items-center gap-2 ">
+             <DropdownMenu>
+                <DropdownMenuTrigger>
+                <Button type="submit" class="bg-cerulean hover:bg-aqua hover:text-black">
+                 Categorias
+                </Button>
+                
+                </DropdownMenuTrigger>
+                <DropdownMenuContent>
+                <DropdownMenuLabel>Todas las categorías</DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem>Videojuegos</DropdownMenuItem>
+                <DropdownMenuItem>Animes</DropdownMenuItem>
+                <DropdownMenuItem>Películas</DropdownMenuItem>
+                <DropdownMenuItem>OCs</DropdownMenuItem>
+                </DropdownMenuContent>
+            </DropdownMenu>
         </div>
 
         <Button as-child class="ml-auto">
@@ -43,7 +70,9 @@ import {
     
 <div class="bg-rosa mx-auto w-11/12 min-h-screen mt-4 p-2 content-start">
     
- <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mx-auto">
+ <div 
+ class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mx-auto"
+ >
     <Card class="bg-aqua w-[220px] h-auto m-2 cursor-pointer hover:bg-cerulean hover:text-white">
         <CardHeader class="pb-2">
             <CardTitle class="text-3xl font-bold">2</CardTitle>
