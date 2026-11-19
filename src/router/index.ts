@@ -10,23 +10,23 @@ export const router = createRouter({
 
   routes: [
     {
-      path: "/Inicio",
-      name: "Inicio",
+      path: "/inicio",
+      name: "inicio",
       component: Inicio,
     },
     {
-      path: "/Principal",
-      name: "Principal",
+      path: "/principal",
+      name: "principal",
       component: Principal,
     },
  {
-      path: "/Cesta",
-      name: "Cesta",
+      path: "/cesta",
+      name: "cesta",
       component: CestaCompra,
     },
 
     {
-      path: "/Favoritos",
+      path: "/favoritos",
       name: "fav",
       component: Fav,
     },

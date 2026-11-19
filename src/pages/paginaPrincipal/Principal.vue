@@ -6,7 +6,6 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
@@ -42,57 +41,83 @@ import {
             <h1>Aqui estan todos los productos disponibles</h1>
         </span>
     
-<div class="bg-rosa mx-auto w-11/12 h-screen mt-6 mb-6 opacity-90 grid grid-rows-4 grid-cols-4 gap-4">
+<div class="bg-rosa mx-auto w-11/12 min-h-screen mt-4 p-2 content-start">
     
+ <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mx-auto">
+    <Card class="bg-aqua w-[220px] h-auto m-2 cursor-pointer hover:bg-cerulean hover:text-white">
+        <CardHeader class="pb-2">
+            <CardTitle class="text-3xl font-bold">2</CardTitle>
+        </CardHeader>
+        <CardContent class="pt-0 px-0">
+            <img
+            src="/imagenes/resident/claire.png"
+            class="w-full aspect-square object-contain bg-crema rounded-b-md"
+            />
+        </CardContent>
+    </Card>
+        
+        <Card class="bg-aqua w-[220px] h-auto m-2 cursor-pointer hover:bg-cerulean hover:text-white">
+        <CardHeader class="pb-2">
+            <CardTitle class="text-3xl font-bold">2</CardTitle>
+        </CardHeader>
+        <CardContent class="pt-0 px-0">
+            <img
+            src="/imagenes/resident/claire.png"
+            class="w-full aspect-square object-contain bg-crema rounded-b-md"
+            />
+        </CardContent>
+    </Card>
 
-    <Card class="bg-aqua w-60 h-60 m-2">
-        <CardHeader>
-        <CardTitle>Card Title</CardTitle>
-        <CardDescription>Card Description</CardDescription>
+    <Card class="bg-aqua w-[220px] h-auto m-2 cursor-pointer hover:bg-cerulean hover:text-white">
+        <CardHeader class="pb-2">
+            <CardTitle class="text-3xl font-bold">2</CardTitle>
         </CardHeader>
-            <CardContent>
-            <p>Card Content</p>
-            </CardContent>
-     </Card>
-    
-     <Card class="bg-aqua w-60 h-60 m-2">
-        <CardHeader>
-        <CardTitle>Card Title</CardTitle>
-        <CardDescription>Card Description</CardDescription>
+        <CardContent class="pt-0 px-0">
+            <img
+            src="/imagenes/resident/claire.png"
+            class="w-full aspect-square object-contain bg-crema rounded-b-md"
+            />
+        </CardContent>
+    </Card>
+
+    <Card class="bg-aqua w-[220px] h-auto m-2 cursor-pointer hover:bg-cerulean hover:text-white">
+        <CardHeader class="pb-2">
+            <CardTitle class="text-3xl font-bold">2</CardTitle>
         </CardHeader>
-            <CardContent>
-            <p>Card Content</p>
-            </CardContent>
-     </Card>
-    
-     <Card class="bg-aqua w-60 h-60 m-2">
-        <CardHeader>
-        <CardTitle>Card Title</CardTitle>
-        <CardDescription>Card Description</CardDescription>
+        <CardContent class="pt-0 px-0">
+            <img
+            src="/imagenes/resident/claire.png"
+            class="w-full aspect-square object-contain bg-crema rounded-b-md"
+            />
+        </CardContent>
+    </Card>
+
+    <Card class="bg-aqua w-[220px] h-auto m-2 cursor-pointer hover:bg-cerulean hover:text-white">
+        <CardHeader class="pb-2">
+            <CardTitle class="text-3xl font-bold">2</CardTitle>
         </CardHeader>
-            <CardContent>
-            <p>Card Content</p>
-            </CardContent>
-     </Card>
-     <Card class="bg-aqua w-60 h-60 m-2">
-        <CardHeader>
-        <CardTitle>Card Title</CardTitle>
-        <CardDescription>Card Description</CardDescription>
+        <CardContent class="pt-0 px-0">
+            <img
+            src="/imagenes/resident/claire.png"
+            class="w-full aspect-square object-contain bg-crema rounded-b-md"
+            />
+        </CardContent>
+    </Card>
+
+    <Card class="bg-aqua w-[220px] h-auto m-2 cursor-pointer hover:bg-cerulean hover:text-white">
+        <CardHeader class="pb-2">
+            <CardTitle class="text-3xl font-bold">2</CardTitle>
         </CardHeader>
-            <CardContent>
-            <p>Card Content</p>
-            </CardContent>
-     </Card>
-     <Card class="bg-aqua w-60 h-60 m-2">
-        <CardHeader>
-        <CardTitle>Card Title</CardTitle>
-        <CardDescription>Card Description</CardDescription>
-        </CardHeader>
-            <CardContent>
-            <p>Card Content</p>
-            </CardContent>
-     </Card>
-    
+        <CardContent class="pt-0 px-0">
+            <img
+            src="/imagenes/resident/claire.png"
+            class="w-full aspect-square object-contain bg-crema rounded-b-md"
+            />
+        </CardContent>
+    </Card>
+ </div>
+
+ 
     
     </div>
 
