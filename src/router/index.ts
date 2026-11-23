@@ -1,33 +1,34 @@
 
-import CestaCompra from "@/pages/cesta/CestaCompra.vue";
-import Principal from "../pages/paginaPrincipal/Principal.vue";
+import CestaCompra from "@/pages/Cesta/CestaCompra.vue";
+import Principal from "../pages/PaginaPrincipal/Principal.vue";
 import { createRouter, createWebHashHistory } from "vue-router";
-import Fav from "@/pages/favoritos/Fav.vue";
-import Inicio from "../pages/home/inicio.vue";
+import Fav from "@/pages/Favoritos/Fav.vue";
+import Inicio from "@/pages/Inicio/Inicio.vue";
+
 
 export const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
 
   routes: [
     {
-      path: "/inicio",
+      path: "/",
       name: "inicio",
       component: Inicio,
     },
     {
       path: "/principal",
-      name: "principal",
+      name: "Principal",
       component: Principal,
     },
  {
-      path: "/cesta",
-      name: "cesta",
+      path: "/Cesta",
+      name: "Cesta",
       component: CestaCompra,
     },
 
     {
-      path: "/favoritos",
-      name: "fav",
+      path: "/Favoritos",
+      name: "Fav",
       component: Fav,
     },
 

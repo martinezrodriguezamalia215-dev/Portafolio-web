@@ -17,6 +17,13 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
+import { ref } from 'vue';
+import { Personajes } from '../Productos/data';
+
+
+
+const listaPersonajes = ref(Personajes)
+
 </script>
 
 
@@ -64,7 +71,7 @@ import {
 
      </div>
     
-        <span>
+        <span class="flex ">
             <h1>Aqui estan todos los productos disponibles</h1>
         </span>
     
@@ -73,77 +80,22 @@ import {
  <div 
  class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mx-auto"
  >
-    <Card class="bg-aqua w-[220px] h-auto m-2 cursor-pointer hover:bg-cerulean hover:text-white">
+    <Card 
+    class="bg-aqua w-[220px] h-auto m-2 cursor-pointer hover:bg-cerulean hover:text-white"
+    v-for="personajes in listaPersonajes"
+    :key="personajes.id">
         <CardHeader class="pb-2">
-            <CardTitle class="text-3xl font-bold">2</CardTitle>
+            <CardTitle class="text-3xl font-bold">{{ personajes.nomen }}</CardTitle>
         </CardHeader>
         <CardContent class="pt-0 px-0">
             <img
-            src="/imagenes/resident/claire.png"
+            :src="`/imagenes/peluches/${ personajes.imago}`"
             class="w-full aspect-square object-contain bg-crema rounded-b-md"
             />
         </CardContent>
     </Card>
         
-        <Card class="bg-aqua w-[220px] h-auto m-2 cursor-pointer hover:bg-cerulean hover:text-white">
-        <CardHeader class="pb-2">
-            <CardTitle class="text-3xl font-bold">2</CardTitle>
-        </CardHeader>
-        <CardContent class="pt-0 px-0">
-            <img
-            src="/imagenes/resident/claire.png"
-            class="w-full aspect-square object-contain bg-crema rounded-b-md"
-            />
-        </CardContent>
-    </Card>
-
-    <Card class="bg-aqua w-[220px] h-auto m-2 cursor-pointer hover:bg-cerulean hover:text-white">
-        <CardHeader class="pb-2">
-            <CardTitle class="text-3xl font-bold">2</CardTitle>
-        </CardHeader>
-        <CardContent class="pt-0 px-0">
-            <img
-            src="/imagenes/resident/claire.png"
-            class="w-full aspect-square object-contain bg-crema rounded-b-md"
-            />
-        </CardContent>
-    </Card>
-
-    <Card class="bg-aqua w-[220px] h-auto m-2 cursor-pointer hover:bg-cerulean hover:text-white">
-        <CardHeader class="pb-2">
-            <CardTitle class="text-3xl font-bold">2</CardTitle>
-        </CardHeader>
-        <CardContent class="pt-0 px-0">
-            <img
-            src="/imagenes/resident/claire.png"
-            class="w-full aspect-square object-contain bg-crema rounded-b-md"
-            />
-        </CardContent>
-    </Card>
-
-    <Card class="bg-aqua w-[220px] h-auto m-2 cursor-pointer hover:bg-cerulean hover:text-white">
-        <CardHeader class="pb-2">
-            <CardTitle class="text-3xl font-bold">2</CardTitle>
-        </CardHeader>
-        <CardContent class="pt-0 px-0">
-            <img
-            src="/imagenes/resident/claire.png"
-            class="w-full aspect-square object-contain bg-crema rounded-b-md"
-            />
-        </CardContent>
-    </Card>
-
-    <Card class="bg-aqua w-[220px] h-auto m-2 cursor-pointer hover:bg-cerulean hover:text-white">
-        <CardHeader class="pb-2">
-            <CardTitle class="text-3xl font-bold">2</CardTitle>
-        </CardHeader>
-        <CardContent class="pt-0 px-0">
-            <img
-            src="/imagenes/resident/claire.png"
-            class="w-full aspect-square object-contain bg-crema rounded-b-md"
-            />
-        </CardContent>
-    </Card>
+      
  </div>
 
  

@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/package.json",
   "name": "portafolio-web",
   "description": "Plantilla de portafolio para la asignatura de Apps y arte Multimedia",
   "author": "Amalia Martínez",
